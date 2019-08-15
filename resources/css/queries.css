@@ -14,7 +14,7 @@
 @media only screen and (max-width: 1023px) {
     body {font-size: 18px;}
     section {padding: 60px 0;}
-    header {height: 100vh;}
+    
     .long-copy {
         width: 80%;
         margin-left: 10%;
@@ -58,32 +58,6 @@
 @media only screen and (max-width: 767px) {
     body {font-size: 16px;}
     section {padding: 30px 0;}
-    header {height: 100vh;}
-
-    .row-header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px
-    }
-
-    .hero-image-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        order: 2;
-    }
-    .hero-image-box img {
-        width: 100%;
-    }
-    .hero-text-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
 
     .btn-full:link,
     .btn-full:visited,
@@ -151,14 +125,5 @@
 @media only screen and (max-width: 480px) {
     section {padding: 25px 0;}
     .contact-form {width: 100%;}
-    .row-header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px
-    }
-    .hero-text-box {text-align: center;}
-    header {height: 70vh;}
 }
 
