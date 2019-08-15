@@ -64,7 +64,7 @@ section {
 h1,
 h2,
 h3 {
-    font-weight: 400;   
+    font-weight: 600;   
 }
 
 h1 {
@@ -223,14 +223,25 @@ input[type=submit]:active {
 /* ------------------------*/
 /*HEADER*/
 /* ------------------------*/
-
 header {
-    background-image: -webkit-linear-gradient(to bottom right,#101415, #41423C);
-    background-image: linear-gradient(to bottom right,#101415, #41423C);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(img/header-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(img/header-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background-attachment: fixed;  
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    text-align: center;
+    width: 1140px;
+    top: 40%;
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
 }
 
 .header-box {
@@ -250,29 +261,20 @@ header {
     width: 100%;
 }
 
-.hero-text-box {
-    flex-basis: 100%;
-    order: 1;
-
-}
-
-.hero-image-box {
-    
-    order: 2;
-}
 .hero-image-box img {
     width: 150%;
 }
 
 .hero-text-box p {
-    color: #64636C;
+    color: #fff;
     font-size: 110%;
-    font-weight: 400;
-    margin-bottom: 10px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 150%;
 }
 
 .logo {
-    height: 60px;
+    height: 55px;
     width: auto;
     float: left;
     margin-top: 20px; 
@@ -305,6 +307,7 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
+    font-weight: 600;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
@@ -313,7 +316,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-top: 2px solid #7f955c;
+    border-top: 4px solid #7f955c;
 }
 
 /*Mobile-navi*/
@@ -355,6 +358,25 @@ header {
 /* ------------------------*/
 /*MENU*/
 /* ------------------------*/
+
+.menu-item {
+    display: flex;
+    flex-basis:100%;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.menu-header h3 {
+    color: #7f955c;
+}
+
+.menu-header h4 {
+    font-size: 90%;
+}
+
+.menu-header p {
+    font-size: 80%;
+}
 
 .section-features .long-copy {
     margin-bottom: 30px;
